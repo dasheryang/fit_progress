@@ -177,6 +177,21 @@ function parse_init_data(){
     $data_set[] = ['2015-10-02', 73.5, 700];
     $data_set[] = ['2015-10-03', 74.0, 550];
 
+    $data_set[] = ['2015-10-04', 73.9, 800];
+    $data_set[] = ['2015-10-05', 73.5, 850];
+    $data_set[] = ['2015-10-06', 73.7, 700];
+
+    $data_set[] = ['2015-10-07', 74.2, 760];
+    $data_set[] = ['2015-10-08', 73.8, 1000];
+    $data_set[] = ['2015-10-09', 72.8, 1300];
+    $data_set[] = ['2015-10-10', 72.5, 1050];
+    $data_set[] = ['2015-10-11', 73.4, 600];
+    $data_set[] = ['2015-10-12', 73.3, 1000];
+    $data_set[] = ['2015-10-13', 73.1, 800];
+    $data_set[] = ['2015-10-14', 73.2, 950];
+    $data_set[] = ['2015-10-15', 72.8, 1000];
+    $data_set[] = ['2015-10-16', 73.3, 900];
+
     return $data_set;
 }
 
@@ -211,6 +226,7 @@ function main(){
 
             $sum_energy += $record[2];
             $energy_vals[] = $sum_energy;
+	//	$energy_vals[] = $record[2];
 
             $avg_weight_vals[] = get_avg_weight( $weight_vals, $index );
 
